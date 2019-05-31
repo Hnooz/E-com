@@ -1,33 +1,6 @@
 @extends('main')
 
 @section('content')
-<!-- <div class="col-md-8 col-md-offset-2">
-
-<form method="post" action="{{ route('products.store') }}">
-  @csrf
-
-  <div class="form-group">
-    <label>Name :</label>
-    <input type="text" name="name" class="form-control">
-  </div>
-
-  <div class="form-group">
-    <label>Email :</label>
-    <input type="email" name="email" class="form-control">
-  </div>
-
-  <div class="form-group">
-    <label>password :</label>
-    <input type="password" name="password" class="form-control">
-  </div>
-
-  <div class="form-group">
-    <input type="submit" value="Add Admin" class="form-control btn btn-success btn-block btn-lg form-spacing-top form-submit">
-  </div>
-
-</form>
-</div> -->
-<!--  -->
 
 <!-- <div class="container"> -->
     <div class="panel panel-primary">
@@ -45,12 +18,12 @@
                                 <label class="col-sm-3 control-label">Name</label>
                                 <div class="col-sm-10 col-md-9">
                                     <input
-
+                                          pattern=".{4,}"
+                                          title="This Field Require At Least 10 Chars"
                                            type="text" name="name"
                                            class="form-control"
                                            placeholder="Name OF The Item"
-
-                                            >
+                                           required>
                                 </div>
                             </div>
                             <!--Description-->
